@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clients.cs">
+    <Compile Include="GestionMatos_Interventions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Clients.Designer.cs">
-      <DependentUpon>Clients.cs</DependentUpon>
+    <Compile Include="GestionMatos_Interventions.Designer.cs">
+      <DependentUpon>GestionMatos_Interventions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionMatos_Clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionMatos_Clients.Designer.cs">
+      <DependentUpon>GestionMatos_Clients.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionMatos_Home.cs">
       <SubType>Form</SubType>
@@ -58,6 +64,43 @@
     <Compile Include="GestionMatos_Home.Designer.cs">
       <DependentUpon>GestionMatos_Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionMatos_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionMatos_Login.Designer.cs">
+      <DependentUpon>GestionMatos_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionMatos_Marques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionMatos_Marques.Designer.cs">
+      <DependentUpon>GestionMatos_Marques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionMatos_Materiels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionMatos_Materiels.Designer.cs">
+      <DependentUpon>GestionMatos_Materiels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionMatos_Sites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionMatos_Sites.Designer.cs">
+      <DependentUpon>GestionMatos_Sites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionMatos_Techniciens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionMatos_Techniciens.Designer.cs">
+      <DependentUpon>GestionMatos_Techniciens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionMatos_Types-Materiel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionMatos_Types-Materiel.Designer.cs">
+      <DependentUpon>GestionMatos_Types-Materiel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\SqlHelpers.cs" />
     <Compile Include="PPE3_GestionMatosDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -65,11 +108,32 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Clients.resx">
-      <DependentUpon>Clients.cs</DependentUpon>
+    <EmbeddedResource Include="GestionMatos_Interventions.resx">
+      <DependentUpon>GestionMatos_Interventions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionMatos_Clients.resx">
+      <DependentUpon>GestionMatos_Clients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionMatos_Home.resx">
       <DependentUpon>GestionMatos_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionMatos_Login.resx">
+      <DependentUpon>GestionMatos_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionMatos_Marques.resx">
+      <DependentUpon>GestionMatos_Marques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionMatos_Materiels.resx">
+      <DependentUpon>GestionMatos_Materiels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionMatos_Sites.resx">
+      <DependentUpon>GestionMatos_Sites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionMatos_Techniciens.resx">
+      <DependentUpon>GestionMatos_Techniciens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionMatos_Types-Materiel.resx">
+      <DependentUpon>GestionMatos_Types-Materiel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -102,7 +166,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
